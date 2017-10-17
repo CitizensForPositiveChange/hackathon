@@ -43,7 +43,18 @@ git push origin update_readme
 
 - From here, you will get the green thumbs up that you can merge your code or a warning that there are merge conflicts
 
-- If you get a green thumbs up, go ahead and click the green button 'Merge'
+- If you get a green thumbs up, go ahead and click the green button 'Merge pull request'
 
+- Viola! Now your code is merged into the master code base
 
+- Now back in your command line, we want to return back to our master branch and make sure to update the code on our local machine to match the most up-to-date code living in the master branch on github.
 
+git checkout master
+git pull origin master
+
+- Now I personally like to delete my old branch and create a new branch off of master. It keeps life simple.
+
+git branch -D update_readme
+git checkout -b more_updates
+
+- And keep on hacking away
