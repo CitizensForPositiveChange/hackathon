@@ -14,6 +14,12 @@ https://guides.github.com/activities/hello-world/
 git clone git@github.com:CitizensForPositiveChange/hackathon.git
 ```
 
+- if the above throws an error try
+
+```
+git clone https://git@github.com/CitizensForPositiveChange/hackathon.git
+```
+
 - You just cloned a copy of the master branch on to your local machine from the 'origin' or from github.  The master branch contains the master copy of all our collaborative code.
 
 - It is good practice to always pull from master before creating a new branch. This will help you avoid merge conficts in the future!
