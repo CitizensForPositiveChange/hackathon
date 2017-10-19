@@ -2,7 +2,7 @@
 
 #### Collaborative git 101 :)
 
-- This website provides a very helpful intro with great diagrams, although doesn't provide info on how to do the same tasks via the command line. 
+- This website provides a very helpful intro with great diagrams, although doesn't provide info on how to do the same tasks via the command line.
 
 https://guides.github.com/activities/hello-world/
 
@@ -22,16 +22,24 @@ git clone https://git@github.com/CitizensForPositiveChange/hackathon.git
 
 - You just cloned a copy of the master branch on to your local machine from the 'origin' or from github.  The master branch contains the master copy of all our collaborative code.
 
-- It is good practice to always pull from master before creating a new branch. This will help you avoid merge conficts in the future!
+- It is good practice to always pull from master before creating a new branch. This will help you avoid merge conflicts in the future!
 
 ```
 git pull origin master
 ```
 
+- If you get an error, make sure to cd into the repo directory (that has the .git directory) and then pull.
+
 - Let's create a new branch for updating the README
 
 ```
 git checkout -b update_readme
+```
+
+- Type the following to see see all local branches of your repository. The starred branch is your current branch:
+
+```
+git branch
 ```
 
 - Now that we are in the update_readme branch, add whatever changes you like to the file
@@ -43,7 +51,7 @@ git add README.md
 git commit -am 'add some message here describing the changes you made'
 ```
 
-- Now we are going to push out branch up to github to share.  In this case you want to push the changes you made on the update_readme branch to github (github = origin)
+- Now we are going to push our branch up to github to share.  In this case you want to push the changes you made on the update_readme branch to github (github = origin)
 
 ```
 git push origin update_readme
