@@ -51,7 +51,7 @@ git add README.md
 git commit -am 'add some message here describing the changes you made'
 ```
 
-- Now we are going to push out branch up to github to share.  In this case you want to push the changes you made on the update_readme branch to github (github = origin)
+- Now we are going to push our branch up to github to share.  In this case you want to push the changes you made on the update_readme branch to github (github = origin)
 
 ```
 git push origin update_readme
