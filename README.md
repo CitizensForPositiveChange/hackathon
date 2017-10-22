@@ -1,71 +1,88 @@
-# [Start Bootstrap - Freelancer](https://startbootstrap.com/template-overviews/freelancer/)
+### Hackathon notes
 
-[Freelancer](http://startbootstrap.com/template-overviews/freelancer/) is a one page freelancer portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, and a working PHP contact form.
+#### Collaborative git 101 :)
 
-## Preview
+- This website provides a very helpful intro with great diagrams, although doesn't provide info on how to do the same tasks via the command line.
 
-[![Freelancer Preview](https://startbootstrap.com/assets/img/templates/freelancer.jpg)](https://blackrockdigital.github.io/startbootstrap-freelancer/)
+https://guides.github.com/activities/hello-world/
 
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-freelancer/)**
+- So here's a little git command line 101 :)
 
-## Status
+- Start by cloning this repository onto your local machine
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-freelancer/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-freelancer.svg)](https://www.npmjs.com/package/startbootstrap-freelancer)
-[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-freelancer.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-freelancer)
-[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-freelancer/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-freelancer)
-[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-freelancer/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-freelancer?type=dev)
+```
+git clone git@github.com:CitizensForPositiveChange/hackathon.git
+```
 
-## Download and Installation
+- if the above throws an error try
 
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/freelancer/)
-* Install via npm: `npm i startbootstrap-freelancer`
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-freelancer.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-freelancer)
+```
+git clone https://git@github.com/CitizensForPositiveChange/hackathon.git
+```
 
-## Usage
+- You just cloned a copy of the master branch on to your local machine from the 'origin' or from github.  The master branch contains the master copy of all our collaborative code.
 
-### Basic Usage
+- It is good practice to always pull from master before creating a new branch. This will help you avoid merge conflicts in the future!
 
-After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+```
+git pull origin master
+```
 
-### Advanced Usage
+- If you get an error, make sure to cd into the repo directory (that has the .git directory) and then pull.
 
-After installation, run `npm install` and then run `gulp dev` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
+- Let's create a new branch for updating the README
 
-#### Gulp Tasks
+```
+git checkout -b update_readme
+```
 
-- `gulp` the default task that builds everything
-- `gulp dev` browserSync opens the project in your default browser and live reloads when changes are made
-- `gulp sass` compiles SCSS files into CSS
-- `gulp minify-css` minifies the compiled CSS file
-- `gulp minify-js` minifies the themes JS file
-- `gulp copy` copies dependencies from node_modules to the vendor directory
+- Type the following to see see all local branches of your repository. The starred branch is your current branch:
 
-## Bugs and Issues
+```
+git branch
+```
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-freelancer/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/freelancer/).
+- Now that we are in the update_readme branch, add whatever changes you like to the file
 
-## Custom Builds
+- Once you are ready, now we need to let git know that you have changes you would like to commit
 
-You can hire Start Bootstrap to create a custom build of any template, or create something from scratch using Bootstrap. For more information, visit the **[custom design services page](https://startbootstrap.com/bootstrap-design-services/)**.
+```
+git add README.md
+git commit -am 'add some message here describing the changes you made'
+```
 
-## About
+- Now we are going to push our branch up to github to share.  In this case you want to push the changes you made on the update_readme branch to github (github = origin)
 
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
+```
+git push origin update_readme
+```
 
-* https://startbootstrap.com
-* https://twitter.com/SBootstrap
+- Now if we look at https://github.com/CitizensForPositiveChange/hackathon you will see 'Your recently pushed branches.'
 
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
+- Click on 'Compare & pull request'
 
-* http://davidmiller.io
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
+- This will open up the next page to show you the changes you made. On this page click the green button 'Create pull request'
 
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+- Now you have created a pull request, which is a request to merge your code branch into the master branch (our group code)
 
-## Copyright and License
+- From here, you will get the green thumbs up that you can merge your code or a warning that there are merge conflicts
 
-Copyright 2013-2017 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/gh-pages/LICENSE) license.
+- If you get a green thumbs up, go ahead and click the green button 'Merge pull request'
+
+- Viola! Now your code is merged into the master code base
+
+- Now back in your command line, we want to return back to our master branch and make sure to update the code on our local machine to match the most up-to-date code living in the master branch on github.
+
+```
+git checkout master
+git pull origin master
+```
+
+- Now I personally like to delete my old branch and create a new branch off of master. It keeps life simple.
+
+```
+git branch -D update_readme
+git checkout -b more_updates
+```
+
+- And keep on hacking away :)
