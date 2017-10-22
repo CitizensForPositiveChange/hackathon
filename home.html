@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<title>C.F.P.C.</title>
+	<link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">-->
+
+<style type="text/css">
+	body {
+		background: #d4dade;
+		margin: 0;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+	}
+	/*nav {*/
+		/*background: #cfd5d9;*/
+	/*	margin: 1em;*/
+	/*}*/
+
+	.brand-logo {
+		font-size: 2em;
+		text-align: left;
+		background-color: white;
+		/*position: absolute;*/
+		/*padding: 0 0 0 1.5em;*/
+		padding: .75em;
+		/*display: flex;*/
+	}
+
+	.main-body {
+		max-width: 750px;
+		margin: 0 auto 50px auto;
+	}
+	
+	.social-icons {
+		text-align: center;
+	}
+	.header {
+		/*padding-top: 2em;*/
+	}
+	
+	.header h1 {
+		/*background-color: #fdde31;*/
+		background: #fee812;
+		font-size: 2.5em;
+		text-transform: uppercase;
+		/*margin: 50px auto 50px auto;*/
+		padding: 2em .5em .5em;
+		margin: 0;
+		
+	}
+	
+	h2 {
+		background: white;
+		font-size: 1.75em;
+		font-family: 'Alegreya', serif;
+		margin-top: 0;
+		padding: .5em .5em 2em .5em;
+	}
+	/*source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_countdown*/
+	#demo {
+		position: fixed;
+		bottom: 10px;
+
+		left: 50%;
+		margin-left: -275px;
+		text-align: center;
+		/*font-size: 60px;*/
+		font-size: 3.75em;
+		background: rgba(0,0,0,.75);
+		color: white;
+	}
+	
+	.circle {
+		/* circle */
+		padding: 3em;
+		border-radius: 50%;
+	    width: 3.5em;
+	    height: 3.5em; 
+	}
+	/*.container > div:after {*/
+ /* 		content: '';*/
+ /* 		display: block;*/
+ /* 	 	height: 0;*/
+  		/*padding-bottom: 10%;*/
+	/*}*/
+	
+	
+	.main-content {
+		text-align: left;
+		font-size: 2em;
+		background-color: #cfd5d9;
+		padding: .5em;
+	}
+	.action-steps {
+		margin-left: 3em;
+	}
+	.social-footer {
+		background-color: #fdde31;
+		color: white;
+		font-size: 3em;
+		padding-right: .75em;
+		text-align: right;
+	}
+	.social-footer a {
+		text-decoration: none;
+		color: white;
+	}
+	.social-footer a:hover {
+		color: black;
+	}
+	
+</style> 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-91431420-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-91431420-5');
+</script>
+
+</head>
+
+<body>
+	
+	<nav class="brand-logo">
+		cfpc.io 
+		<!--<span class="social-icons">twitter instagram</span>-->
+	</nav>
+	
+	<div class="main-body">
+	
+		<header class="header">
+			<hgroup>
+				<h1>Connect For Positive <br>Change</h1>
+				<h2>cfpc.io | io = input output <br>because positivity expands. </h2>
+			</hgroup>
+		</header>
+		<div class="container">
+			<span id="demo"class="circle">
+			<script>
+			// Set the date we're counting down to
+			var countDownDate = new Date("Oct 22, 2017 15:00:00").getTime();
+			
+			// Update the count down every 1 second
+			var x = setInterval(function() {
+			
+			    // Get todays date and time
+			    var now = new Date().getTime();
+			    
+			    // Find the distance between now an the count down date
+			    var distance = countDownDate - now;
+			
+			// Time calculations for days, hours, minutes and seconds
+			    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+			    
+			    // Output the result in an element with id="demo"
+			    document.getElementById("demo").innerHTML = "COMING SOON " + days + "d " + hours + "h "
+			    + minutes + "m " + seconds + "s ";
+			    
+			    // If the count down is over, write some text 
+			    if (distance < 0) {
+			        clearInterval(x);
+			        document.getElementById("demo").innerHTML = "Launched! Oct. 22, 2017 3:00pm PST";
+			    }
+			}, 1000);
+			</script>
+			</span>
+		</div>
+		<div class="main-content">
+			<br>
+			<br>
+			<br>
+				<p>A challenge to take action towards implementing solutions for a better community. 
+				Affirming and promoting equal political, economic, social and civil rights for all people.
+				Connect locally, impact globally.</p>
+					<h3>Accept the positive action challenge: </h3>
+					<ol class="action-steps">
+						<li>connect</li>
+						<li>commit</li>
+						<li>share</li>
+					</ol>
+					<p><a href="https://www.instagram.com/cfpc.io/" target=_blank>#cfpcaction</a></p>
+					<p>No matter how small, take steps to bring peace, unity and compassion to each interaction.</p></p>
+			</div>
+	
+		</div>
+	<footer class="social-footer">
+		<span>follow:</span>
+		<a href="https://www.instagram.com/cfpc.io/" target=_blank> instagram </a>
+		<a href="https://twitter.com/cfpcio" target=_blank>twitter</a>
+		<a href="https://www.facebook.com/cfpc.io" target=_blank>facebook</a>
+	</footer>
+	
+	
+</body>
+</html>
